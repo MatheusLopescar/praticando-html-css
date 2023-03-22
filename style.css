@@ -6,6 +6,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --botao-azul-efeito: #3e92f8;
+    --botao-purple-efeito: purple ;
 
     --fonte-principal: 'Inter', sans-serif;
 }
@@ -164,10 +165,67 @@ body {
     color: var(--cinza-secundario);
 }
 
+.container__botao:hover {
+    color: var(--botao-purple-efeito);
+    font-weight: 700;
+}
+
 .lista__link:hover{
     color: var(--botao-azul-efeito);
 }
 
 .lista__link:active {
-    color: purple;
+    color: var(--botao-purple-efeito);
+}
+
+@media screen and (max-width: 768px) {
+
+    .principal {
+        height: auto;
+    }
+
+    .container {
+        background-image: none;
+        display: block;
+    }
+    
+    .container__imagem {
+        width: 50vh;
+    }
+
+    .container__box {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario__imagem {
+        width: 50vh;
+        margin: 2em;
+    }
+
+    .container__descricao {
+        padding: .5em 2em;
+    }
+
+    .dispositivos__titulo {
+        margin-top: .5em;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .rodape {
+        margin: 1em 2em;
+    }
+
+    .rodape__lista {
+        display: block;
+        text-align: center;
+    }
+
 }
